@@ -34,7 +34,7 @@ body {
 
 @media only screen and (max-width: 914px) {
     body {
-        background: linear-gradient(#0f0f29dd, #000000aa), url('./images/wallpaperflare.com_wallpaper\ \(17\).jpg');
+        background: linear-gradient(#0d0d1ae8, #000000aa), url('./images/wallpaperflare.com_wallpaper\ \(17\).jpg');
         background-attachment: fixed;
     }
 }
