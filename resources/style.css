@@ -1,0 +1,626 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('./fonts/rubik-v21-latin/rubik-v21-latin-regular.woff2') format('woff2'), 
+         url('./fonts/rubik-v21-latin/rubik-v21-latin-regular.woff') format('woff'), 
+         url(./fonts/rubik-v21-latin/rubik-v21-latin-regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik Glitch';
+    src: url('./fonts/rubik-glitch-v2-latin/rubik-glitch-v2-latin-regular.woff2') format('woff2'), 
+         url('./fonts/rubik-glitch-v2-latin/rubik-glitch-v2-latin-regular.woff') format('woff'), 
+         url(./fonts/rubik-glitch-v2-latin/rubik-glitch-v2-latin-regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('./fonts/lexend-deca-v17-latin/lexend-deca-v17-latin-regular.woff2') format('woff2'), 
+         url('./fonts/lexend-deca-v17-latin/lexend-deca-v17-latin-regular.woff') format('woff'), 
+         url(./fonts/lexend-deca-v17-latin/lexend-deca-v17-latin-regular.ttf) format('truetype');
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    background: linear-gradient(#070635bb, #000000d8), url('./images/wallpaperflare.com_wallpaperr.jpg');
+    background-attachment: fixed;
+    background-color: #232323;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+@media only screen and (max-width: 914px) {
+    body {
+        background: linear-gradient(#0f0f29dd, #000000aa), url('./images/wallpaperflare.com_wallpaper\ \(17\).jpg');
+        background-attachment: fixed;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-family: 'Rubik Glitch', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    margin: 0;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wide {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+.button {
+    font-size: 1rem;
+    width: fit-content;
+    padding: 1.3rem;
+    background-color: white;
+    color: #232323;
+    border-radius: 4rem;
+    border: #ffffff solid 0.125rem;
+    transition: .2s ease-out;
+}
+
+.button:hover {
+    border: #c6c5ff solid 0.125rem;
+    color: white;
+    background: none;
+    transition: .1s ease-in;
+}
+
+@media only screen and (max-width: 1316px) {
+    html {font-size: 14px;}
+}
+
+@media only screen and (max-width: 1154px) {
+    html {font-size: 12px;}
+}
+
+@media only screen and (max-width: 990px) {
+    html {font-size: 10px;}
+}
+
+@media only screen and (max-width: 828px) {
+    html {font-size: 8px;}
+}
+
+@media only screen and (max-width: 666px) {
+    html {font-size: 6px;}
+}
+
+@media only screen and (max-width: 504px) {
+    html {font-size: 16px;}
+}
+
+@media only screen and (max-width: 400px) {
+    html {font-size: 14px;}
+}
+
+@media only screen and (max-width: 375px) {
+    html {font-size: 13px;}
+}
+
+@media only screen and (max-width: 350px) {
+    html {font-size: 12px;}
+}
+
+@media only screen and (max-width: 325px) {
+    html {font-size: 11px;}
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header li a {
+    margin: 0 1rem;
+    color: rgb(200, 200, 200);
+    transition: .15s;
+
+}
+
+header li a:hover {
+    color: white;
+    transition: .3s ease-out;
+    padding-bottom: .25rem;
+    border-bottom: solid .125rem #c6c5ff;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 3rem 2rem 1rem;
+}
+
+.lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.line {
+    height: 0.1rem;
+    margin: 0 2rem;
+    flex: 1;
+    background-color: #c6c5ff;
+}
+
+@media only screen and (max-width: 452px) {
+    header h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;        
+    }
+
+    header li {
+        margin: .5rem 0;
+    }
+
+    header li a:hover {
+        color: rgb(200, 200, 200);
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+
+
+/* Join */
+
+#join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .quote {
+    width: 100%;
+    height: 7rem;
+    background: linear-gradient(#00000050, #00000050), url('./images/a0cb5cfe121c5115236c950abc10a7ef.jpg');
+    background-attachment: fixed;
+    margin: 1rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote p {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+} */
+
+#join .lines {
+    margin: 2rem 0;
+}
+
+#join .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+}
+
+#join img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    margin: 0 2rem 3rem;
+}
+
+/* @media only screen and (max-width: 1316px) {
+    #join img {
+        height: 15rem;
+        width: 15rem;
+        margin: 0 1.5rem 3rem;
+    }
+
+    #join .images {
+        margin: 0 1.5rem;
+    }
+} */
+
+
+
+/* Events */
+
+#events {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* #events h2 {
+    padding-bottom: 0.25rem;
+    border-bottom: #a19dfb 0.125rem solid;
+} */
+
+#events .lines {
+    margin: 5rem 0 3rem;
+}
+
+#cyber, #tournament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.info .date {
+    color: rgb(200, 200, 200);
+    margin: 0 0 2rem;
+}
+
+.info h3 {
+    font-size: 4.5rem;
+    margin: 0;
+    font-weight: 400;
+    line-height: 5rem;
+}
+.info .msg {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.info .button {
+    margin-top: 2rem;
+}
+
+.info .msg a {
+    text-decoration: underline;
+    color: #c6c5ff;
+    transition: .1s;
+}
+
+.info .msg a:hover {
+    text-decoration: none;
+    transition: .1s;
+    color: rgb(200, 200, 200);
+}
+
+#cyber {
+    margin: 4rem 7rem 0 8rem;
+    max-width: 80rem;
+}
+
+#cyber .images{
+    display: flex;
+    max-height: 30rem;
+    width: 35rem;
+    flex-flow: column wrap;
+}
+
+#cyber img {
+    width: 15rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+#cyber #girl {
+    width: fit-content;
+    height: 30rem;
+    transform: scaleX(-1);
+}
+
+#cyber .info {
+    margin-right: 5rem;
+}
+
+#tournament {
+    margin: 2rem 8rem 0;
+}
+
+#tournament img {
+    height: 28rem;
+    width: 32rem;
+    object-fit: cover;
+    object-position: right;
+    margin-right: 6rem;
+}
+
+.end {
+    margin: 4rem 2rem 5rem;
+}
+
+@media only screen and (max-width: 504px) {
+    .info {
+        max-width: 20rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+    
+    .info h3 {
+        font-size: 3rem;
+        line-height: 3.3rem;
+        text-align: center;
+    }
+
+    .info .msg {
+        text-align: center;
+    }
+    
+    .info .button {
+        margin-top: 1rem;
+    }
+
+    #cyber {
+        flex-direction: column-reverse;
+        margin: 3.5rem 4rem 1rem;
+    }
+    
+    #cyber .images{
+        height: 18.8rem;
+        width: 22rem;
+    }
+
+    #girl {
+        max-height: 18.8rem;
+    }
+    
+    #cyber img {
+        height: 50%;
+        width: auto;
+        padding: .5rem;
+      }
+    
+    #cyber .info {
+        margin: 1.5rem 0 0;
+    }
+    
+    #tournament {
+        flex-direction: column;
+        margin: 1rem 4rem;
+    }
+    
+    #tournament img {
+        height: 18rem;
+        width: 20rem;
+        margin: 0;
+    }
+
+    .end {
+        margin: 3rem 2rem 4rem;
+    }
+}
+
+/* @media only screen and (max-width: 1316px) {
+    #events .lines {
+        margin: 5rem 0 3rem;
+    }
+
+    .info .date {
+        margin: 0 0 1.5rem;
+    }
+    
+    .info h3 {
+        font-size: 3.375rem;
+        line-height: 3.75rem;
+    }
+    .info .msg {
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+    
+    .info .button {
+        margin-top: 1.5rem;
+    }
+
+    #cyber {
+        margin: 4rem 5.25rem 0 6rem;
+        max-width: 60rem;
+    }
+    
+    #cyber .images{
+        max-height: 22.5rem;
+        width: 26.25rem;
+    }
+    
+    #cyber img {
+        width: 11.25rem;
+        padding: .75rem;
+      }
+
+    #cyber .info {
+        margin-right: 3.75rem;
+    }
+    
+    #tournament {
+        margin: 1.5rem 6rem 0;
+    }
+    
+    #tournament img {
+        height: 21rem;
+        width: 24rem;
+        margin-right: 4.5rem;
+    }
+} */
+
+
+
+/* Visit */
+
+#visit p, .contact p {
+    margin: 0;
+}
+
+#visit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visit .find {
+    margin-bottom: 2rem;
+}
+
+#visit img {
+    height: 40rem;
+    margin-right: 5rem;
+}
+
+#visit .address p {
+    font-size: 2.8rem;
+}
+
+#visit .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe {
+    margin-top: 3rem;
+    width: 24rem;
+    height: 14rem;
+}
+
+@media only screen and (max-width: 504px) {
+    #visit {
+        flex-direction: column;        
+    }
+    
+    #visit .find {
+        margin-bottom: 1.6rem;
+    }
+    
+    #visit img {
+        width: 20rem;
+        height: auto;
+        margin-right: 0;
+    }
+    
+    #visit .address p {
+        font-size: 1rem;
+        font-family: 'Rubik', sans-serif;
+        display: inline;
+    }
+    
+    #visit .content {
+        align-items: center;
+        margin-top: 2rem;
+        max-width: 20rem;
+    }
+    
+    iframe {
+        margin-top: 1.5rem;
+        width: 20rem;
+        height: 11.7rem;
+    }
+}
+
+
+
+/* Contact */
+
+#contact .lines {
+    margin-top: 5rem;
+}
+
+.details {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    margin: 0 4rem 2rem;
+}
+
+.details .founded {
+    width: 60%;
+    margin: 0 4rem 0;
+}
+
+.contact .wide {
+    color: rgb(200, 200, 200);
+    margin: 2rem 0 1rem;
+}
+
+.founded h1 {
+    margin: 2rem 0 0;
+}
+
+.founded h4 {
+    font-weight: 400;
+    margin: 1rem 0 0;
+}
+
+@media only screen and (max-width: 504px) {
+    #contact .lines {
+        margin-top: 4rem;
+    }
+    
+    .details {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 2rem;
+    }
+    
+    .details .founded {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .founded h1 {
+        margin: 2rem 0 0;
+    }
+}
+
+
+
+/* Footer */
+
+footer p {
+    font-family: 'Rubik', sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 3rem 1.5rem;
+    border-top: solid #c6c5ff .125rem;
+}
+
+@media only screen and (max-width: 504px) {
+    footer p {
+        padding-bottom: 1rem;
+    }
+}
